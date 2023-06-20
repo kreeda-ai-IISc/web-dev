@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V.1.1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">Kreeda.ai</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="#" class="link link--dark"><i class="fa fa-coffee"></i> About</a></li>
+        <li class="menu__item"><a href="#" class="link link--dark"><i class="fa fa-envelope-o"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+
+    <div id="streams-container">
+      <div id="host-container">
+        <video id="host-video"></video>
+        <canvas id="hostVideoCanvas"></canvas>
+      </div>
+      <div id="my-container">
+        <video id="myVideo"></video>
+        <canvas id="myVideoCanvas"></canvas>
+      </div>
+    </div>
+    <div id="pose-controls">
+      <button id="start-host-button" class="btn btn-dark">Start Host Pose</button>
+      <button id="start-my-cam-button" class="button--primary">Start My Camera</button>
+      <button id="start-my-pose-estimation-button" class="btn btn-dark">Start my pose estimation</button> 
+      <button id="start-comparision-button" class="button--primary">Start comparision</button>
+    </div>
+
+
+    <footer class="footer">Copyright @2022 Kreeda.ai</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="backpain_e4.js"></script>
+  </body>
+</html>
